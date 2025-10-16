@@ -1,0 +1,24 @@
+name: 🐛 Bug Report
+description: Melde einen Fehler im Projekt
+title: "[BUG] <Kurzbeschreibung>"
+labels: [bug]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Kurze Zusammenfassung
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Reproduzieren
+      placeholder: |
+        1. ...
+        2. ...
+  - type: textarea
+    id: expected
+    attributes:
+      label: Erwartetes Verhalten
+  - type: textarea
+    id: actual
+    attributes:
+      label: Tatsächliches Verhalten
