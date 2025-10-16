@@ -1,7 +1,8 @@
-name: Bug Report 🐛 
+name: Bug Report 🐛
 description: Melde einen Fehler oder unerwartetes Verhalten
 title: "[BUG] Kurze Beschreibung des Problems"
-labels: [bug]
+labels:
+  - "type: bug"
 
 body:
   - type: markdown
@@ -15,8 +16,7 @@ body:
     attributes:
       label: Beschreibe den Bug
       description: Eine klare und prägnante Beschreibung des Fehlers.
-      placeholder: |
-        Eine klare und prägnante Beschreibung des Fehlers.
+      placeholder: Eine klare und prägnante Beschreibung des Fehlers.
     validations:
       required: true
 
@@ -49,7 +49,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "### 💻 Desktop (bitte die folgenden Angaben ausfüllen)"
+      value: "### Desktop (bitte die folgenden Angaben ausfüllen)"
 
   - type: input
     id: desktop_os
@@ -71,4 +71,35 @@ body:
 
   - type: markdown
     attributes:
-      value: "### 📱 Smartphone (bitte die folgenden Angaben ausfüllen)"
+      value: "### Smartphone (bitte die folgenden Angaben ausfüllen)"
+
+  - type: input
+    id: phone_device
+    attributes:
+      label: Gerät
+      placeholder: z. B. iPhone 15, Samsung Galaxy S22
+
+  - type: input
+    id: phone_os
+    attributes:
+      label: Betriebssystem
+      placeholder: z. B. iOS 18.1, Android 14
+
+  - type: input
+    id: phone_browser
+    attributes:
+      label: Browser
+      placeholder: z. B. Safari, Chrome, Standardbrowser
+
+  - type: input
+    id: phone_version
+    attributes:
+      label: Version
+      placeholder: z. B. 22
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Zusätzlicher Kontext
+      description: Füge hier weitere Informationen zum Problem hinzu.
+      placeholder: Zusätzliche Details, Logs oder Hinweise.
